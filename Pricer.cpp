@@ -274,12 +274,12 @@ void processDataFeed(string data, OrderBook &orderBook)
 
 int main(int argc, const char * argv[])
 {
-    const char* DEFAULT_PRICER_FILE = "pricer.in";
-    int TARGET_SIZE_ARGV_INDEX = 1;
-    int FILE_NAME_ARGV_INDEX = 2;
+	const char* DEFAULT_PRICER_FILE = "pricer.in";
+	int TARGET_SIZE_ARGV_INDEX = 1;
+	int FILE_NAME_ARGV_INDEX = 2;
     
-    bool isArgumentContainsFileName = (argc==(FILE_NAME_ARGV_INDEX+1));
-    bool isArgumentContainsTargetSize = (argc==(TARGET_SIZE_ARGV_INDEX+1));
+	bool isArgumentContainsFileName = (argc==(FILE_NAME_ARGV_INDEX+1));
+	bool isArgumentContainsTargetSize = (argc==(TARGET_SIZE_ARGV_INDEX+1));
 
 	if (!(isArgumentContainsTargetSize || isArgumentContainsFileName))
 	{
