@@ -248,7 +248,7 @@ void processAddOrder(string &side, Tick &tick, OrderBook &orderBook)
 void processDataFeed(string data, OrderBook &orderBook)
 {
 	vector<string> tokens;
-    split(tokens, data, boost::	is_any_of(" "));
+	split(tokens, data, boost::	is_any_of(" "));
 	if (tokens.size() >= 3)
 	{
 		string timestamp = tokens[0];
@@ -309,5 +309,5 @@ int main(int argc, const char * argv[])
 	}
 	pricerFile.close();
 	
-    return 0;
+	return 0;
 }
