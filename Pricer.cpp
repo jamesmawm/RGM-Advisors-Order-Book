@@ -289,11 +289,11 @@ int main(int argc, const char * argv[])
 	
 	int targetSize = atoi(argv[TARGET_SIZE_ARGV_INDEX]);
     const char* targetFile = isArgumentContainsFileName ? 
-                                            argv[FILE_NAME_ARGV_INDEX] : DEFAULT_PRICER_FILE;
+							argv[FILE_NAME_ARGV_INDEX] : DEFAULT_PRICER_FILE;
     
-    OrderBook orderBook(targetSize);
+	OrderBook orderBook(targetSize);
 	ifstream pricerFile;
-    string data;
+	string data;
     
 	pricerFile.open(targetFile);
 	if (!pricerFile.is_open()){
