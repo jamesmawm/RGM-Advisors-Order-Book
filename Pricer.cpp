@@ -288,7 +288,7 @@ int main(int argc, const char * argv[])
 	}
 	
 	int targetSize = atoi(argv[TARGET_SIZE_ARGV_INDEX]);
-    const char* targetFile = isArgumentContainsFileName ? 
+	const char* targetFile = isArgumentContainsFileName ?
 							argv[FILE_NAME_ARGV_INDEX] : DEFAULT_PRICER_FILE;
     
 	OrderBook orderBook(targetSize);
